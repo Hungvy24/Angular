@@ -1,1 +1,27 @@
-<p>list works!</p>
+<div class="p-5 flex justify-center w-[100%]">
+  <table>
+    <tr class="bg-gray-100 ">
+      <th>#</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Image</th>
+      <th>Thao tac</th>
+    </tr>
+    <tbody class="">
+      <tr class="border-b" *ngFor="let products of products">
+        <td> {{products.id}} </td>
+        <td> {{products.title}} </td>
+        <td class="w-[700px]"> {{products.description}} </td>
+        <td> {{products.price}} </td>
+        <td> <img [src]= "products.thumbnail" class="w-[100px]"> </td>
+        <td class="p-5 w-[300px] flex justify-center items-center">
+          <button class="border border-separate bg-gray-500 text-white rounded-md w-[70px] h-[40px]">Them</button>
+          <button class="border border-separate bg-red-500 text-white rounded-md w-[70px] h-[40px]">Sua</button>
+          <button class="border border-separate bg-orange-500 text-white rounded-md w-[70px] h-[40px] ">Xoa</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
