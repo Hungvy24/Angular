@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Phở",
       "description": "Nguồn gốc của món phở bắt đầu từ khoảng đầu thế kỷ 20, tại Hà Nội và Nam Định.",
       "price": 549,
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Bánh cuốn",
       "description": "Và cái tên cuối cùng không thể thiếu trong Top 40 món ăn truyền thống Việt Nam ngon và nổi tiếng nhất, đó là bánh cuốn.",
       "price": 899,
@@ -38,22 +38,7 @@
       ]
     },
     {
-      "id": 3,
-      "title": "Bánh khọt",
-      "description": "Nếu bạn là một tín đồ ăn uống chắc hẳn bạn đã nghe qua cái tên bánh khọt. Nguyên liệu làm bánh khọt là bột gạo",
-      "price": 1249,
-      "discountPercentage": 15.46,
-      "rating": 4.09,
-      "stock": 36,
-      "brand": "Samsung",
-      "category": "smartphones",
-      "thumbnail": "https://images.toplist.vn/images/800px/banh-khot-507261.jpg",
-      "images": [
-        "https://images.toplist.vn/images/800px/banh-khot-507262.jpg"
-      ]
-    },
-    {
-      "id": 4,
+      "id": "4",
       "title": "Bánh mì",
       "description": "Được mệnh danh là loại bánh sandwich ngon nhất thế giới, bánh mì cũng được vinh dự xếp trong Top 10",
       "price": 280,
@@ -72,7 +57,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Bún ",
       "description": "Bún là một món ăn đặc trưng khác trong ẩm thực Việt Nam, mà nếu sử dụng tên tiếng Anh cũng sẽ gọi là noodle.",
       "price": 499,
@@ -89,25 +74,7 @@
       ]
     },
     {
-      "id": 6,
-      "title": "Cơm tấm",
-      "description": "Cơm tấm thường được ăn với 4 món chính: sườn lợn nướng, bì lợn, chả, trứng ốp la.",
-      "price": 1749,
-      "discountPercentage": 11.02,
-      "rating": 4.57,
-      "stock": 83,
-      "brand": "Apple",
-      "category": "laptops",
-      "thumbnail": "https://images.toplist.vn/images/800px/com-tam-507259.jpg",
-      "images": [
-        "https://images.toplist.vn/images/800px/com-tam-507258.jpg",
-        "https://cdn.dummyjson.com/product-images/6/2.jpg",
-        "https://cdn.dummyjson.com/product-images/6/3.png",
-        "https://cdn.dummyjson.com/product-images/6/4.jpg"
-      ]
-    },
-    {
-      "id": 7,
+      "id": "6",
       "title": "Gà nướng KonPlông",
       "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
       "price": 1499,
@@ -125,59 +92,75 @@
       ]
     },
     {
-      "id": 8,
-      "title": "Bánh xèo",
-      "description": "Bánh xèo là món ăn vặt phổ biến ở khu vực Trung bộ, từ Nghệ An vào đến Huế.",
+      "id": "7",
+      "title": "Gà nướng KonPlông",
+      "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
       "price": 1499,
-      "discountPercentage": 10.23,
-      "rating": 4.43,
-      "stock": 68,
-      "brand": "Microsoft Surface",
+      "discountPercentage": 4.15,
+      "rating": 4.25,
+      "stock": 50,
+      "brand": "Samsung",
       "category": "laptops",
-      "thumbnail": "https://images.toplist.vn/images/800px/banh-xeo-275257.jpg",
+      "thumbnail": "https://images.toplist.vn/images/800px/ga-nuong-konplong-507267.jpg",
       "images": [
-        "https://images.toplist.vn/images/800px/banh-xeo-274177.jpg",
-        "https://cdn.dummyjson.com/product-images/8/2.jpg",
-        "https://cdn.dummyjson.com/product-images/8/3.jpg",
-        "https://cdn.dummyjson.com/product-images/8/4.jpg",
-        "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
+        "https://images.toplist.vn/images/800px/ga-nuong-konplong-507266.jpg",
+        "https://cdn.dummyjson.com/product-images/7/2.jpg",
+        "https://cdn.dummyjson.com/product-images/7/3.jpg",
+        "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
       ]
     },
     {
-      "id": 9,
-      "title": "Gỏi cuốn",
-      "description": "Gỏi cuốn là món ăn phổ biến ở ca ba miền Bắc, Trung, Nam, nhưng phổ biến nhất là ở Nam Bộ",
-      "price": 1099,
-      "discountPercentage": 11.83,
-      "rating": 4.54,
-      "stock": 96,
-      "brand": "Infinix",
+      "id": "8",
+      "title": "Gà nướng KonPlông",
+      "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
+      "price": 1499,
+      "discountPercentage": 4.15,
+      "rating": 4.25,
+      "stock": 50,
+      "brand": "Samsung",
       "category": "laptops",
-      "thumbnail": "https://images.toplist.vn/images/800px/goi-cuon-274169.jpg",
+      "thumbnail": "https://images.toplist.vn/images/800px/ga-nuong-konplong-507267.jpg",
       "images": [
-        "https://images.toplist.vn/images/800px/goi-cuon-274170.jpg",
-        "https://cdn.dummyjson.com/product-images/9/2.png",
-        "https://cdn.dummyjson.com/product-images/9/3.png",
-        "https://cdn.dummyjson.com/product-images/9/4.jpg",
-        "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg"
+        "https://images.toplist.vn/images/800px/ga-nuong-konplong-507266.jpg",
+        "https://cdn.dummyjson.com/product-images/7/2.jpg",
+        "https://cdn.dummyjson.com/product-images/7/3.jpg",
+        "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
       ]
     },
     {
-      "id": 10,
-      "title": "Gà Tiên Yên",
-      "description": "Gà Tiên Yên là giống gà đồi, suốt ngày leo dốc, tìm sâu nên da vàng, thịt thơm, nước ngọt.",
-      "price": 1099,
-      "discountPercentage": 6.18,
-      "rating": 4.43,
-      "stock": 89,
-      "brand": "HP Pavilion",
+      "id": "9",
+      "title": "Gà nướng KonPlông",
+      "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
+      "price": 1499,
+      "discountPercentage": 4.15,
+      "rating": 4.25,
+      "stock": 50,
+      "brand": "Samsung",
       "category": "laptops",
-      "thumbnail": "https://images.toplist.vn/images/800px/ga-tien-yen-507313.jpg",
+      "thumbnail": "https://images.toplist.vn/images/800px/ga-nuong-konplong-507267.jpg",
       "images": [
-        "https://images.toplist.vn/images/800px/ga-tien-yen-507312.jpg",
-        "https://cdn.dummyjson.com/product-images/10/2.jpg",
-        "https://cdn.dummyjson.com/product-images/10/3.jpg",
-        "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg"
+        "https://images.toplist.vn/images/800px/ga-nuong-konplong-507266.jpg",
+        "https://cdn.dummyjson.com/product-images/7/2.jpg",
+        "https://cdn.dummyjson.com/product-images/7/3.jpg",
+        "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Gà nướng KonPlông",
+      "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
+      "price": 1499,
+      "discountPercentage": 4.15,
+      "rating": 4.25,
+      "stock": 50,
+      "brand": "Samsung",
+      "category": "laptops",
+      "thumbnail": "https://images.toplist.vn/images/800px/ga-nuong-konplong-507267.jpg",
+      "images": [
+        "https://images.toplist.vn/images/800px/ga-nuong-konplong-507266.jpg",
+        "https://cdn.dummyjson.com/product-images/7/2.jpg",
+        "https://cdn.dummyjson.com/product-images/7/3.jpg",
+        "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
       ]
     }
   ]

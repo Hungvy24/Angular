@@ -1,24 +1,24 @@
 <div class="p-5 flex justify-center w-[100%]">
-  <table>
-    <tr class="bg-gray-100 ">
-      <th>#</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Price</th>
-      <th>Image</th>
-      <th>Thao tac</th>
+  <table class="border border-separate">
+    <tr class="bg-gray-100 h-[30px]">
+      <th class="border border-separate">#</th>
+      <th class="border border-separate">Title</th>
+      <th class="border border-separate">Description</th>
+      <th class="border border-separate">Price</th>
+      <th class="border border-separate">Image</th>
+      <th class="border border-separate">Thao tac</th>
     </tr>
     <tbody class="">
-      <tr class="border-b" *ngFor="let products of products">
-        <td> {{products.id}} </td>
-        <td> {{products.title}} </td>
-        <td class="w-[700px]"> {{products.description}} </td>
-        <td> {{products.price}} </td>
-        <td> <img [src]= "products.thumbnail" class="w-[100px]"> </td>
-        <td class="p-5 w-[300px] flex justify-center items-center">
-          <button class="border border-separate bg-gray-500 text-white rounded-md w-[70px] h-[40px]">Them</button>
-          <button class="border border-separate bg-red-500 text-white rounded-md w-[70px] h-[40px]">Sua</button>
-          <button class="border border-separate bg-orange-500 text-white rounded-md w-[70px] h-[40px] ">Xoa</button>
+      <tr class="border-b " *ngFor="let products of products">
+        <td class="border border-separate"> {{products.id}} </td>
+        <td class=" border border-separate "> {{products.title}} </td>
+        <td class="w-[700px] border border-separate"> {{products.description}} </td>
+        <td class="border border-separate" > {{products.price}} </td>
+        <td class="border border-separate"> <img [src]= "products.thumbnail" class="w-[200px] flex justify-center items-center"> </td>
+        <td class="p-12 w-[300px] flex justify-center items-center gap-2 border border-separate">
+          <button class="border border-separate bg-gray-500 text-white rounded-md w-[70px] h-[40px] hover:bg-black">Them</button>
+          <button class="border border-separate bg-red-500 text-white rounded-md w-[70px] h-[40px] hover:bg-sky-500">Sua</button>
+          <button class="border border-separate bg-orange-500 text-white rounded-md w-[70px] h-[40px] hover:bg-pink-400" (click)="deleteProduct(products.id)">Xoa</button>
         </td>
       </tr>
 

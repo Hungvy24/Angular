@@ -20,6 +20,18 @@ export class ProductListComponent {
       this.products = data;
     })
   }
+  deleteProduct(id: number) {
+    if(confirm('Bạn có muốn xóa')){
+      this.productSevice.deleteProduct(id).subscribe(data => {
+        this.productSevice.getAllProduct().subscribe(data => {
+          this.products = data;
+        })
+      })
+      alert('Bạn đã xóa thành công')
+    }else{
+      alert('Bạn đã hủy xóa')
+    }
+  }
   ngDoCheck() {
     console.log(this.products);
 
