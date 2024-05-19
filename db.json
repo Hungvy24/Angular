@@ -92,7 +92,7 @@
       ]
     },
     {
-      "id": "7",
+      "id": "6",
       "title": "Gà nướng KonPlông",
       "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
       "price": 1499,
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "id": "8",
+      "id": "6",
       "title": "Gà nướng KonPlông",
       "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
       "price": 1499,
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "id": "9",
+      "id": "6",
       "title": "Gà nướng KonPlông",
       "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
       "price": 1499,
@@ -146,7 +146,61 @@
       ]
     },
     {
-      "id": "10",
+      "id": "6",
+      "title": "Gà nướng KonPlông",
+      "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
+      "price": 1499,
+      "discountPercentage": 4.15,
+      "rating": 4.25,
+      "stock": 50,
+      "brand": "Samsung",
+      "category": "laptops",
+      "thumbnail": "https://images.toplist.vn/images/800px/ga-nuong-konplong-507267.jpg",
+      "images": [
+        "https://images.toplist.vn/images/800px/ga-nuong-konplong-507266.jpg",
+        "https://cdn.dummyjson.com/product-images/7/2.jpg",
+        "https://cdn.dummyjson.com/product-images/7/3.jpg",
+        "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Gà nướng KonPlông",
+      "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
+      "price": 1499,
+      "discountPercentage": 4.15,
+      "rating": 4.25,
+      "stock": 50,
+      "brand": "Samsung",
+      "category": "laptops",
+      "thumbnail": "https://images.toplist.vn/images/800px/ga-nuong-konplong-507267.jpg",
+      "images": [
+        "https://images.toplist.vn/images/800px/ga-nuong-konplong-507266.jpg",
+        "https://cdn.dummyjson.com/product-images/7/2.jpg",
+        "https://cdn.dummyjson.com/product-images/7/3.jpg",
+        "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Gà nướng KonPlông",
+      "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
+      "price": 1499,
+      "discountPercentage": 4.15,
+      "rating": 4.25,
+      "stock": 50,
+      "brand": "Samsung",
+      "category": "laptops",
+      "thumbnail": "https://images.toplist.vn/images/800px/ga-nuong-konplong-507267.jpg",
+      "images": [
+        "https://images.toplist.vn/images/800px/ga-nuong-konplong-507266.jpg",
+        "https://cdn.dummyjson.com/product-images/7/2.jpg",
+        "https://cdn.dummyjson.com/product-images/7/3.jpg",
+        "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": "6",
       "title": "Gà nướng KonPlông",
       "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
       "price": 1499,

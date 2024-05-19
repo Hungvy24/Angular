@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { first, last } from 'rxjs';
 import { HeaderComponent } from './components/header/header.component';
+import { ProductComponent } from './components/productlist/product.component';
 
 @Component({
   selector: 'app-root',
