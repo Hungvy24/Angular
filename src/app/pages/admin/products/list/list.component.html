@@ -1,6 +1,6 @@
 <div class="p-5 flex justify-center w-[100%]">
   <table class="border border-separate">
-    <tr class="bg-green-500 h-[30px]">
+    <tr class="bg-gray-400 h-[30px]">
       <th class="border border-separate w-10">#</th>
       <th class="border border-separate">Title</th>
       <th class="border border-separate">Description</th>
@@ -8,9 +8,9 @@
       <th class="border border-separate">Image</th>
       <th class="border border-separate">Thao tac</th>
     </tr>
-    <tbody class="bg-gray-100 w-[100%]">
+    <tbody class=" w-[100%]" >
       <tr class="border-b " *ngFor="let products of products">
-        <td class="border border-separate"> {{products.id}} </td>
+        <td class="border border-separate "> {{products.id}} </td>
         <td class=" border border-separate "> {{products.title}} </td>
         <td class="w-[500px] border border-separate"> {{products.description}} </td>
         <td class="border border-separate" > {{products.price}} </td>

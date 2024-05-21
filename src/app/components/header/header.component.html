@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="md:flex md:items-center md:gap-12">
-        <a class="block text-teal-600" href="#">
+        <a class="block text-teal-600" [routerLink]="['home']">
           <span class="sr-only">Home</span>
           <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -17,7 +17,7 @@
         <nav aria-label="Global">
           <ul class="flex items-center gap-6 text-sm">
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> About </a>
+              <a class="text-gray-500 transition hover:text-gray-500/75" [routerLink]="['home']"> About </a>
             </li>
 
             <li>
@@ -37,7 +37,7 @@
             </li>
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
+              <a class="text-gray-500 transition hover:text-gray-500/75" [routerLink]="['admin/products/list']"> Admin </a>
             </li>
           </ul>
         </nav>

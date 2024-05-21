@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "Phở",
-      "description": "Nguồn gốc của món phở bắt đầu từ khoảng đầu thế kỷ 20, tại Hà Nội và Nam Định.",
+      "description": "Nguồn gốc của món phở bắt đầu từ khoảng đầu thế kỷ 20, tại Hà Nội và Nam Định. Tinh hoa ẩm thực hòa quyện với giá trị văn hóa, lịch sử.",
       "price": 549,
       "discountPercentage": 12.96,
       "rating": 4.69,
@@ -40,7 +40,7 @@
     {
       "id": "4",
       "title": "Bánh mì",
-      "description": "Được mệnh danh là loại bánh sandwich ngon nhất thế giới, bánh mì cũng được vinh dự xếp trong Top 10",
+      "description": "Được mệnh danh là loại bánh sandwich ngon nhất thế giới, bánh mì cũng được vinh dự xếp trong Top 10 cái hay của người Việt.",
       "price": 280,
       "discountPercentage": 17.91,
       "rating": 4.3,
@@ -92,7 +92,7 @@
       ]
     },
     {
-      "id": "6",
+      "id": "7",
       "title": "Gà nướng KonPlông",
       "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
       "price": 1499,
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "id": "6",
+      "id": "8",
       "title": "Gà nướng KonPlông",
       "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
       "price": 1499,
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "id": "6",
+      "id": "9",
       "title": "Gà nướng KonPlông",
       "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
       "price": 1499,
@@ -146,61 +146,7 @@
       ]
     },
     {
-      "id": "6",
-      "title": "Gà nướng KonPlông",
-      "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
-      "price": 1499,
-      "discountPercentage": 4.15,
-      "rating": 4.25,
-      "stock": 50,
-      "brand": "Samsung",
-      "category": "laptops",
-      "thumbnail": "https://images.toplist.vn/images/800px/ga-nuong-konplong-507267.jpg",
-      "images": [
-        "https://images.toplist.vn/images/800px/ga-nuong-konplong-507266.jpg",
-        "https://cdn.dummyjson.com/product-images/7/2.jpg",
-        "https://cdn.dummyjson.com/product-images/7/3.jpg",
-        "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": "6",
-      "title": "Gà nướng KonPlông",
-      "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
-      "price": 1499,
-      "discountPercentage": 4.15,
-      "rating": 4.25,
-      "stock": 50,
-      "brand": "Samsung",
-      "category": "laptops",
-      "thumbnail": "https://images.toplist.vn/images/800px/ga-nuong-konplong-507267.jpg",
-      "images": [
-        "https://images.toplist.vn/images/800px/ga-nuong-konplong-507266.jpg",
-        "https://cdn.dummyjson.com/product-images/7/2.jpg",
-        "https://cdn.dummyjson.com/product-images/7/3.jpg",
-        "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": "6",
-      "title": "Gà nướng KonPlông",
-      "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
-      "price": 1499,
-      "discountPercentage": 4.15,
-      "rating": 4.25,
-      "stock": 50,
-      "brand": "Samsung",
-      "category": "laptops",
-      "thumbnail": "https://images.toplist.vn/images/800px/ga-nuong-konplong-507267.jpg",
-      "images": [
-        "https://images.toplist.vn/images/800px/ga-nuong-konplong-507266.jpg",
-        "https://cdn.dummyjson.com/product-images/7/2.jpg",
-        "https://cdn.dummyjson.com/product-images/7/3.jpg",
-        "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
-      ]
-    },
-    {
-      "id": "6",
+      "id": "10",
       "title": "Gà nướng KonPlông",
       "description": "Gà nướng vốn là món ăn nhắc đến đã cảm thấy vô cùng hấp dẫn. Thế nhưng gà nướng Kon Plông còn được coi là món ăn đặc sản hàng đầu",
       "price": 1499,

@@ -16,13 +16,4 @@ import { BannerComponent } from '../../components/banner/banner.component';
 })
 export class PublicLayoutComponent {
   products: Product[] = [];
-  // productlist = inject(ProductlistService);
-  // constructor() { }
-
-  // handleProductlist(products: Product[]) {
-
-  // }
-  // ngDoCheck(){
-  //   console.log(this.products);
-  // }
 }

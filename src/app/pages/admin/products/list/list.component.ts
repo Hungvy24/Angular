@@ -2,12 +2,12 @@ import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ProductService } from '../../../../services/product.service';
 import { Product } from '../../../../type/product';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [RouterLink, NgFor],
+  imports: [RouterLink, NgFor, RouterLink, NgIf],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })
