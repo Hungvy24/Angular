@@ -1,70 +1,50 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Product } from '../../type/product';
 import { HomeService } from '../../services/productlist.service';
-import { RouterLink, RouterOutlet, Routes } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { NgFor, NgIf } from '@angular/common';
-import { ProductDetailComponent } from '../../pages/product-detail/product-detail.component';
 import { NotFoundPageComponent } from '../../pages/not-found-page/not-found-page.component';
+import { BannerComponent } from '../../components/banner/banner.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
-  selector: 'app-product-list',
+  selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet, NgFor, RouterLink, NgIf, NotFoundPageComponent],
+  imports: [
+    RouterOutlet,
+    NgFor,
+    RouterLink,
+    NgIf,
+    NotFoundPageComponent,
+    BannerComponent,
+    FooterComponent
+  ],
   templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.css'
+  styleUrls: ['./product-list.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   home: Product[] = [];
+  filteredProducts: Product[] = [];
+  searchText: string = '';
   productList = inject(HomeService);
+
   constructor() { }
+
   ngOnInit(): void {
     this.productList.getAllProductlist().subscribe(data => {
       this.home = data;
-    })
+      this.filteredProducts = [...this.home];
+    });
   }
-  ngDoCheck() {
-    console.log(this.home)
+
+  onSearch(searchText: string) {
+    this.searchText = searchText;
+    if (searchText) {
+      this.filteredProducts = this.home.filter(product =>
+        product.title.toLowerCase().includes(searchText.toLowerCase())
+      );
+    } else {
+      this.filteredProducts = [...this.home];
+    }
   }
 }
-// }
-// import { Component, inject } from '@angular/core';
-// import { Product } from '../../type/product';
-// import { HomeService } from '../../services/productlist.service';
-// import { RouterLink, RouterOutlet, Routes } from '@angular/router';
-// import { NgFor, NgIf } from '@angular/common';
-// import { ProductDetailComponent } from '../../pages/product-detail/product-detail.component';
-// import { NotFoundPageComponent } from '../../pages/not-found-page/not-found-page.component';
-
-// @Component({
-//   selector: 'app-product-list',
-//   standalone: true,
-//   imports: [RouterOutlet, NgFor, RouterLink, NgIf, NotFoundPageComponent],
-//   templateUrl: './product-list.component.html',
-//   styleUrl: './product-list.component.css'
-// })
-// export class HomeComponent {
-//   home: Product[] = [];
-//   products: Product[] = []; // Define the products property
-//   filteredProducts: Product[] = [];
-//   productList = inject(HomeService);
-//   searchTerm = '';
-//   constructor() { }
-//   ngOnInit(): void {
-//     this.productList.getAllProductlist().subscribe(data => {
-//       this.home = data;
-//     })
-//   }
-//   onSearchTermChange(event: Event): void {
-//     const searchTerm = (event.target as HTMLInputElement).value.toLowerCase();
-//     this.searchTerm = searchTerm;
-
-//     this.filteredProducts = this.products.filter(product =>
-//       product.title.toLowerCase().includes(searchTerm) ||
-//       product.description.toLowerCase().includes(searchTerm) // Add more search criteria if needed
-//     );
-//   }
-//   ngDoCheck() {
-//     console.log(this.home)
-//   }
-
-// }

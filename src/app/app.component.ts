@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { first, last } from 'rxjs';
 import { HeaderComponent } from './components/header/header.component';
 import { ProductComponent } from './components/productlist/product.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,6 @@ import { ProductComponent } from './components/productlist/product.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-
+  
 }
 

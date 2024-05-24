@@ -16,4 +16,17 @@ import { BannerComponent } from '../../components/banner/banner.component';
 })
 export class PublicLayoutComponent {
   products: Product[] = [];
+  filteredProducts = [...this.products];
+
+  ngOnInit() {}
+
+  onSearch(searchText: string) {
+    if (searchText) {
+      this.filteredProducts = this.products.filter(product =>
+        product.title.toLowerCase().includes(searchText.toLowerCase())
+      );
+    } else {
+      this.filteredProducts = [...this.products];
+    }
+  }
 }

@@ -16,7 +16,7 @@
         <td class="border border-separate" > {{products.price}} </td>
         <td class="border border-separate"> <img [src]= "products.thumbnail" class="w-[300px] h-20 flex justify-center items-center"> </td>
         <td class="p-12 w-[300px] flex justify-center items-center gap-2 border border-separate">
-          <button class="border border-separate bg-gray-500 text-white rounded-md w-[100px] h-[40px] hover:bg-black">Them</button>
+          <button class="border border-separate bg-gray-500 text-white rounded-md w-[100px] h-[40px] hover:bg-black" [routerLink]="['/products', products.id]">Xem</button>
           <button class="border border-separate bg-red-500 text-white rounded-md w-[100px] h-[40px] hover:bg-sky-500">Sua</button>
           <button class="border border-separate bg-orange-500 text-white rounded-md w-[100px] h-[40px] hover:bg-pink-400" (click)="deleteProduct(products.id)">Xoa</button>
         </td>
