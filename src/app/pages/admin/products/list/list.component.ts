@@ -31,12 +31,15 @@ export class ProductListComponent {
           this.products = data;
         })
       })
-      this.toastr.success('Xóa thành công', 'Thành công')
-      // alert('Bạn đã xóa thành công')
+      this.toastr.success('Xóa thành công', 'Thành công',{ positionClass: 'toast-top-right', closeButton: true, timeOut: 3000 })
+    }else{
+      this.toastr.error('Bạn đã hủy xóa', 'Thất bại',{ positionClass: 'toast-top-right', closeButton: true, timeOut: 3000 })
     }
-    // else{
-    //   alert('Bạn đã hủy xóa')
-    // }
+  }
+  updateProduct(id: number) {
+    this.productSevice.getProductDetail(id).subscribe(data => {
+      this.product = data;
+    })
   }
   ngDoCheck() {
     console.log(this.products);

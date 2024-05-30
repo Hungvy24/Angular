@@ -11,3 +11,14 @@ export interface Product {
   thumbnail: string;
   images: string[];
 }
+
+export type CreateProduct = {
+    title: string | number,
+    image: string,
+    description: string,
+    price: number,
+    category: [
+      id: number,
+      name: string
+    ]
+}
