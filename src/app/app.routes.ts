@@ -13,11 +13,10 @@ import { ProductCreateComponent } from './pages/admin/products/create/create.com
 import { ProductUpdateComponent } from './pages/admin/products/update/update.component';
 
 export const routes: Routes = [
-  { path: 'admin',component: AdminLayoutComponent, children: [{ path: 'products/list', component: ProductListComponent },{ path: 'products/create', component: ProductCreateComponent },]}
+  { path: 'admin',component: AdminLayoutComponent, children: [{ path: 'products/list', component: ProductListComponent },{ path: 'products/create', component: ProductCreateComponent },{ path: 'products/update/:id', component: ProductUpdateComponent },]}
   ,
   {path: '',component: HomeComponent},
   {path: '', component: ClienLayoutsComponent, children: [{path: 'products/:id', component: ProductDetailComponent}]},
-  { path: 'admin/products/update/:id', component: ProductUpdateComponent },
   { path: '1', component: ProductComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
