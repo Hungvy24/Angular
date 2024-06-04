@@ -4,11 +4,12 @@ import { BannerComponent } from '../banner/banner.component';
 import { FormsModule } from '@angular/forms';
 import { Product } from '../../type/product';
 import { ProductService } from '../../services/product.service';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, BannerComponent, FormsModule],
+  imports: [RouterOutlet, RouterLink, BannerComponent, FormsModule, NgFor],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -18,9 +19,9 @@ export class HeaderComponent {
   searchText: string = '';
   constructor() { }
   filterValue: string = '';
-  filter(){
-    this.products =this. filteredProducts. filter(product => product.title.toLowerCase().includes(this.filterValue.toLowerCase()));
-  }
+  // filter(){
+  //   this.products =this. filteredProducts. filter(product => product.title.toLowerCase().includes(this.filterValue.toLowerCase()));
+  // }
 
   onSearch(searchText: string) {
     this.searchText = searchText;
@@ -32,4 +33,5 @@ export class HeaderComponent {
       this.filteredProducts = [...this.products];
     }
   }
+
 }

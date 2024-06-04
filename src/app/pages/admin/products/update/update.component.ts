@@ -20,7 +20,7 @@ export class ProductUpdateComponent {
   createProduct: FormGroup = new FormGroup({
     title: new FormControl('', [Validators.required, Validators.minLength(6)]),
     description: new FormControl('', [Validators.required, Validators.minLength(6)]),
-    image: new FormControl('', []),
+    thumbnail: new FormControl('', []),
     price: new FormControl('', [Validators.required, Validators.min(0)]),
     category: new FormControl('', [Validators.required])
   });

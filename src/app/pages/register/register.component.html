@@ -1,6 +1,7 @@
 <section class="bg-gray-50 ">
   <div
     class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
+
   >
     <a
       href="#"
@@ -22,7 +23,7 @@
         >
           Create and account
         </h1>
-        <form (ngSubmit)="handleSubmit()" class="space-y-4 md:space-y-6">
+        <form      [formGroup]="registerForm" class="space-y-4 md:space-y-6">
           <div>
             <label
               for="fullname"
@@ -30,14 +31,19 @@
               >Your name</label
             >
             <input
-              [(ngModel)]="registerUser.fullname"
+
               type="text"
               name="fullname"
               id="fullname"
               class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Name"
               required=""
+              formControlName="fullname"
             />
+            @if(registerForm.controls['fullname'].errors?.['required'] &&
+            registerForm.controls['fullname'].touched ) {
+            <small class="text-danger text-small text-red-600">Name is Required</small>
+            }
           </div>
           <div>
             <label
@@ -46,14 +52,22 @@
               >Your email</label
             >
             <input
-              [(ngModel)]="registerUser.email"
+
               type="email"
               name="email"
               id="email"
               class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="email@gmail.com"
               required=""
+              formControlName="email"
             />
+            @if(registerForm.controls['email'].errors?.['required'] &&
+            registerForm.controls['email'].touched ) {
+            <small class="text-danger text-small text-red-600">Email is Required</small>
+            } @if(registerForm.controls['email'].errors?.['email'] &&
+            registerForm.controls['email'].touched ) {
+            <small class="text-danger text-small text-red-600">Email is not valid</small>
+            }
           </div>
           <div>
             <label
@@ -62,14 +76,29 @@
               >Password</label
             >
             <input
-              [(ngModel)]="registerUser.password"
+
               type="password"
               name="password"
               id="password"
               placeholder="••••••••"
-              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
               required=""
+              formControlName="password"
             />
+            @if(registerForm.controls['password'].errors?.['required'] &&
+            registerForm.controls['password'].touched ) {
+            <small class="text-danger text-small text-red-600">Password is Required</small>
+            } @if(registerForm.controls['password'].errors?.['minlength'] &&
+            registerForm.controls['password'].touched ) {
+            <small class="text-danger text-small text-red-600"
+              >Min Length toi thieu 6 ky tieu</small
+            >
+            } @if(registerForm.controls['password'].errors?.['maxlength'] &&
+            registerForm.controls['password'].touched ) {
+            <small class="text-danger text-small text-red-600"
+              >Max Length toi da 20 ky tieu</small
+            >
+            }
           </div>
           <div>
             <label
@@ -78,14 +107,34 @@
               >Confirm password</label
             >
             <input
-              [(ngModel)]="registerUser.confirmPassword"
+
               type="confirm-password"
               name="confirm-password"
               id="confirm-password"
               placeholder="••••••••"
-              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
               required=""
+              formControlName="confirmPassword"
             />
+            @if(registerForm.controls['confirmPassword'].errors?.['required'] &&
+            registerForm.controls['confirmPassword'].touched ) {
+            <small class="text-danger text-small text-red-600">Password is Required</small>
+            } @if(registerForm.controls['confirmPassword'].errors?.['minlength'] &&
+            registerForm.controls['confirmPassword'].touched ) {
+            <small class="text-danger text-small text-red-600"
+              >Min Length toi thieu 6 ky tieu</small
+            >
+            } @if(registerForm.controls['confirmPassword'].errors?.['maxlength'] &&
+            registerForm.controls['confirmPassword'].touched ) {
+            <small class="text-danger text-small text-red-600"
+              >Max Length toi da 20 ky tieu</small
+            >
+            } @if(registerForm.controls['confirmPassword'].errors?.['mustMatch'] &&
+            registerForm.controls['confirmPassword'].touched ) {
+            <small class="text-danger text-small text-red-600"
+              >Password not match</small
+            >
+            }
           </div>
           <div class="flex items-start">
             <div class="flex items-center h-5">
@@ -112,6 +161,8 @@
           </div>
           <button
             type="submit"
+            (click)="handleSubmit()"
+            [disabled]="registerForm.invalid"
             class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
           >
             Create an account

@@ -15,6 +15,9 @@ export class ProductService {
   getAllProduct(){
     return this.http.get<Product[]>(this.apiURL);
   }
+  getAllCreate(){
+    return this.http.get<CreateProduct[]>(this.apiURL);
+  }
   deleteProduct(id: number){
     return this.http.delete(`${this.apiURL}/${id}`);
   }

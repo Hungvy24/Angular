@@ -32,12 +32,12 @@
         class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
         id="grid-password"
         type="text"
-        placeholder="Image"
-        formControlName="image"
+        placeholder="Images"
+        formControlName="thumbnail"
       />
 
-      @if(createProduct.controls['image'].errors?.['required'] &&
-      createProduct.controls['image'].touched ) {
+      @if(createProduct.controls['thumbnail'].errors?.['required'] &&
+      createProduct.controls['thumbnail'].touched ) {
       <small class="text-danger text-small text-red-600">Image is Required</small>
       }
     </div>
@@ -103,6 +103,10 @@
         <small class="text-danger text-small text-red-600">Category is Required</small>
         }
       </div>
+      <div class="w-full px-3 p-2 "  >
+      <input type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-900">Đồng ý sửa</label>
+    </div>
     <div class="w-full px-3">
       <button
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"

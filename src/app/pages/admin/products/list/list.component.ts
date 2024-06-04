@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProductService } from '../../../../services/product.service';
-import { Product } from '../../../../type/product';
+import { CreateProduct, Product } from '../../../../type/product';
 import { NgFor, NgIf } from '@angular/common';
 import { ToastrModule } from 'ngx-toastr';
 import { ToastrService } from 'ngx-toastr';
@@ -15,6 +15,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ProductListComponent {
   products : Product[] = [];
+  createProduct: CreateProduct[]=[];
   route = inject(ActivatedRoute);
   productSevice = inject(ProductService);
   product! : Product | undefined;
@@ -22,6 +23,11 @@ export class ProductListComponent {
   ngOnInit() {
     this.productSevice.getAllProduct().subscribe(data => {
       this.products = data;
+    })
+  }
+  addProduct() {
+    this.productSevice.getAllCreate().subscribe(data => {
+      this.createProduct = data;
     })
   }
   deleteProduct(id: number) {
